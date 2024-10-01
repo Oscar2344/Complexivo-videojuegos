@@ -1,44 +1,127 @@
 import { StyleSheet } from "react-native";
 
-
- export const styles=StyleSheet.create({
-root:{
-    flex:1,
-    justifyContent:'center',
-    padding:20,
-    gap:10
-},
-text:{
-    fontSize:20,
-    fontWeight: 'bold',
-    textAlign:'center'
-},
-message:{
-    width:428
-
-},
-textRedirect:{
-    marginTop:20,
-    fontSize:15,
-    textAlign:'center',
-    fontWeight:'bold',
-    color:'#521d7c'
-},
-rootActivity:{
-    flex:1,
-    justifyContent:'center',
-    alignItems:'center'
-},
-rootHome: {
+export const styles = StyleSheet.create({
+  root: {
+    flex: 1,
+    justifyContent: "center",
+    padding: 20,
+    gap: 10,
+    backgroundColor: "#f4f4f4", 
+  },
+  text: {
+    fontSize: 20,
+    fontWeight: "bold",
+    textAlign: "center",
+    color: "#2a2a2a",
+  },
+  message: {
+    width: 428,
+    borderColor: "#cccccc", 
+    borderWidth: 1,
+    borderRadius: 10,
+    padding: 10,
+  },
+  textRedirect: {
+    marginTop: 20,
+    fontSize: 15,
+    textAlign: "center",
+    fontWeight: "bold",
+    color: "#521d7c", 
+  },
+  rootActivity: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  rootHome: {
     flex: 1,
     marginHorizontal: 25,
-    marginVertical: 50
+    marginVertical: 50,
+    backgroundColor: "#ffffff", 
+    borderRadius: 15,
+    shadowColor: "#000", 
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.2,
+    shadowRadius: 6,
+    elevation: 5,
   },
-  headerHome:{
-    flexDirection:'row',
-    gap:15,
-    alignItems:'center',
-  }
-  
+  header: {
+    flexDirection: "row",
+    gap: 15,
+    alignItems: "center",
+    backgroundColor: "#dcdcdc", 
+    padding: 10,
+    borderRadius: 10,
+  },
+  iconHeader: {
+    alignItems: "flex-end",
+    flex: 1,
+  },
+  modal: {
+    padding: 20,
+    marginHorizontal: 20,
+    backgroundColor: "#fff",
+    borderRadius: 15,
+    gap: 10,
+    shadowColor: "#000", 
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.3,
+    shadowRadius: 8,
+    elevation: 10,
+  },
+  rootListProduct: {
+    marginTop: 10,
+    flexDirection: "row",
+    padding: 15,
+    alignItems: "center",
+    gap: 20,
+    backgroundColor: "#f9f9f9", 
+    borderRadius: 12,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.1,
+    shadowRadius: 3,
+    elevation: 2,
+  },
+  fabProduct: {
+    position: "absolute",
+    bottom: 20,
+    right: 15,
+    backgroundColor: "#6200ea", 
+  },
+  rootInputsProduct: {
+    flexDirection: "row",
+    gap: 35,
+    marginVertical: 10, 
+  },
+  rootDetail: {
+    flex: 1,
+    padding: 20,
+    backgroundColor: "#f0f0f0", 
+    gap: 20,
+    borderRadius: 15,
+    shadowColor: "#000", 
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.15,
+    shadowRadius: 5,
+    elevation: 5,
+  },
+  textDetail: {
+    fontWeight: 'bold',
+    fontSize: 16,
+    color: "#333", 
+  },
+  buttonsContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginVertical: 20,
+  },
+  iconSignOut: {
+    marginTop: 25,
+    alignItems: 'center',
+    backgroundColor: "#ffe6e6", 
+    borderRadius: 50,
+    padding: 10,
+  },
 
-})
+});

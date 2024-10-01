@@ -50,14 +50,9 @@ export const LoginScreen = () => {
         formLogin.email,
         formLogin.password
       );
-      setShowMessage({
-        visible: true,
-        message: "Inicio de sesión exitoso",
-        color: "#1d7c2c",
-      });
-      
-    } catch (e) {
-      console.log(e);
+      navigation.dispatch(CommonActions.navigate({name:'Home'}));
+    }catch (error) {
+      console.log("Error: ", error);
       setShowMessage({
         visible: true,
         message: "No se pudo iniciar sesión, intente más tarde!",

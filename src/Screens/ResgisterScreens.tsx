@@ -65,8 +65,8 @@ export const ResgisterScreens = () => {
         message:'Registro exitoso',
         color: '#1d7c2c' ,
       })
-    } catch (e) {
-      console.log(e);
+    }  catch (error) {
+      console.log("Error: ", error);
       setShowMessage({
         visible: true,
         message:'No se logro completar la transacción , intente mas tarde !',
